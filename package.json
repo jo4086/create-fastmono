@@ -1,0 +1,42 @@
+{
+  "name": "create-fastmono",
+  "author": "jo4086",
+  "version": "1.0.0",
+  "description": "A CLI tool to quickly scaffold a monorepo project using pnpm.",
+  "keywords": [
+    "monorepo",
+    "scaffold",
+    "pnpm",
+    "cli",
+    "workspace",
+    "typescript"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jo4086/create-fastmono.git"
+  },
+  "homepage": "https://github.com/jo4086/create-fastmono#readme",
+  "type": "module",
+  "bin": {
+    "create-fastmono": "bin/index.js"
+  },
+  "exports": {
+    ".": "./bin/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm --out-dir dist"
+  },
+  "dependencies": {
+    "execa": "^9.6.0",
+    "fs-extra": "^11.1.1",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/prompts": "^2.4.9",
+    "tsup": "^8.5.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}
