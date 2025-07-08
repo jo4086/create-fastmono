@@ -5,7 +5,7 @@ node_modules/
 .pnpm/
 
 # build output
-dist/
+# dist/
 *.tsbuildinfo
 
 # logs
